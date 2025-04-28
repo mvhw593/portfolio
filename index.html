@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mellissa He Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+        <a href="index.html" class="nav-left">
+          <img src="images/mellissahe-logo-light.png" alt="Mellissa He Logo" class="logo-img" />
+        <span class="name">MELLISSA HE</span>
+        </a>
+
+      <div class="navbar-toggle" id="navbar-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="navbar-overlay" id="navbar-overlay"></div>
+
+      <nav class="nav-right" id="navbar-menu">
+        <a href="index.html#projects">projects</a>
+        <a href="about.html">about</a>
+        <a href="contact.html">contact</a>
+    </nav>
+</nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="intro">Hello! My name is Mellissa He.</p>
+      <h1 class="title">
+        Industrial and UX<br>
+        Product Designer
+      </h1>
+    </div>
+
+  </section>
+
+  <div class="floating-gif">
+    <img src="images/MHseal-animation.gif" alt="Floating animation">
+  </div>
+
+  <!-- More content can go here -->
+
+  <section id="projects" class="projects-section">
+
+    <h2>Projects</h2>
+    <div class="projects-nav">
+      <div class="project-categories">
+        <button class="filter-btn active" data-filter="all">all</button>
+        <button class="filter-btn" data-filter="industrial">industrial</button>
+        <button class="filter-btn" data-filter="ux">ux/ui</button>
+      </div>
+      <div class="project-tools">
+        <button class="grid-toggle" title="Toggle Grid View">
+          <i class="fa-solid fa-border-all"></i>
+        </button>
+     </div>
+    </div>
+  
+    <div class="projects-grid">
+  
+      <div class="project-card" data-category="ux" data-link="studiolog.html">
+        <div class="project-image" style="background-image: url('images/studiolog-featured.webp');">
+          <div class="image-overlay">
+            <span class="tag">ux/ui</span>
+            <div class="project-meta">
+              <span class="title">STUDIOLOG</span>
+              <a href="#" class="case-button">read case study</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="project-card" data-category="ux" >
+        <div class="project-image" style="background-image: url('images/recyclebc-featured.webp');">
+          <div class="image-overlay">
+            <span class="tag">ux/ui</span>
+            <div class="project-meta">
+              <span class="title">RECYCLE BC</span>
+              <a href="#" class="case-button">case study coming soon!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="project-card" data-category="ux" >
+        <div class="project-image" style="background-image: url('images/hotspot-featured.webp');">
+          <div class="image-overlay">
+            <span class="tag">ux/ui</span>
+            <div class="project-meta">
+              <span class="title">HOTSPOT</span>
+              <a href="#" class="case-button">case study coming soon!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  
+      <div class="project-card" data-category="industrial" data-link="joia.html">
+        <div class="project-image" style="background-image: url('images/joia-featured.webp');">
+          <div class="image-overlay">
+            <span class="tag">industrial</span>
+            <div class="project-meta">
+              <span class="title">JOIA</span>
+              <a href="#" class="case-button">view process</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="industrial">
+        <div class="project-image" style="background-image: url('images/arttoy-featured.webp');">
+          <div class="image-overlay">
+            <span class="tag">industrial | art toy</span>
+            <div class="project-meta">
+              <span class="title">PENG&YAURI</span>
+              <!--<a href="#" class="case-button">view process</a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="industrial">
+        <div class="project-image" style="background-image: url('images/ensenas-feature.webp');">
+          <div class="image-overlay">
+            <span class="tag">industrial | boardgame</span>
+            <div class="project-meta">
+              <span class="title">ENSEÑAS</span>
+              <!--<a href="#" class="case-button">read case study</a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="industrial">
+        <div class="project-image" style="background-image: url('images/lamp-featured.webp');">
+          <div class="image-overlay">
+            <span class="tag">industrial | ceramic</span>
+            <div class="project-meta">
+              <span class="title">CASTLE LAMP</span>
+              <!--<a href="#" class="case-button">view process</a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+    </div>
+  </section>
+  
+  <script src="script.js"></script>
+  <script src="homepage.js"></script>
+
+  <!-- More content can go here -->
+
+</body>
+</html>

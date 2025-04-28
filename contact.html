@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Mellissa He</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+   
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-left">
+                <img src="images/mellissahe-logo-light.png" alt="Mellissa He Logo" class="logo-img" />
+              <span class="name">MELLISSA HE</span>
+              </a>
+    
+          <div class="navbar-toggle" id="navbar-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+    
+          <div class="navbar-overlay" id="navbar-overlay"></div>
+    
+          <nav class="nav-right" id="navbar-menu">
+            <a href="index.html#projects">projects</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </nav>
+      </header>
+
+  <main class="contact-container">
+    <section class="contact-content">
+      <h1>Let's get in touch</h1>
+      <p>Have a project in mind, a collaboration idea, or just want to say hi? Feel free to reach out!</p>
+
+      <form id="contact-form" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Success message -->
+<div id="form-message" style="display:none; color:green; margin-top:10px;">Your message was sent!</div>
+
+      
+      <div class="contact-links">
+        <a href="mailto:mellissa-he@outlook.com" class="contact-email">mellissa-he@outlook.com</a>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/mellissa-he-wong-75b842237/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.instagram.com/he_mvhw/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <!--<a href="https://www.behance.net/yourprofile" target="_blank" aria-label="Behance">
+
+service id: service_nwhjdea
+
+template id: template_eomyeyn
+
+public api key: BHbigDLR42OibxLxI
+
+
+
+
+            <i class="fab fa-behance"></i>
+          </a>-->
+        </div>
+      </div>
+      
+
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  
+  <!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<!-- custom JS -->
+<script src="contact.js"></script>
+
+</body>
+</html>
